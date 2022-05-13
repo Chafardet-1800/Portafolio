@@ -1,4 +1,6 @@
-function toggleMenu(){
-    const Menu = document.getElementById('nav-menu')
-    Menu.classList.toggle('hidden')
-}
+const NavButton = document.querySelector('.Icon-Menu');
+const NavMenu = document.querySelector('.nav-menu');
+    
+NavButton.addEventListener("click", () => {
+    NavMenu.classList.toggle('nav-menu_visible')
+})

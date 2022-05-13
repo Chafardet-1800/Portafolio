@@ -8,6 +8,7 @@ body{
     background-color: #020403;
     font-family: rubik, sans-serif;
     padding: 90px 0px 0px;
+    min-height: 100vh;
 }
 
 a{
@@ -59,7 +60,7 @@ img{
     font-size: 1rem;
     width: max-content;
     padding: 0px 10px;
-    line-height: 80px;
+    line-height: 5em;
     text-transform: uppercase;
 }
 
@@ -78,13 +79,12 @@ img{
     background: none;
     border: none;
     color: white;
-    font-size: 1rem;
-    line-height: 80px;
+    font-size: 1.3rem;
 
     display: none;
 }
 
-@media(max-width: 778px){
+@media(max-width: 856px){
     body{
         padding-top: 60px;
     }
@@ -108,18 +108,18 @@ img{
         left: 100%;
         width: 100%;
         padding: 20px 0px;
-        transition: left 1.5s;
+        transition: left 0.5s;
         min-height: min-content;
         overflow-y: scroll;
+        z-index: 999;
     }
 
-    .hidden{
-        left: 0;
-
+    .nav-menu_visible{
+       left: 0;
     }
     
     .menu-item {
-        line-height: 50px;
+        line-height: 3em;
     }
     
     .nav-menu-link:hover {
@@ -146,7 +146,7 @@ img{
 #Intro .box{
     position: relative;
     width: 80%;
-    margin: 0 auto 0 auto;
+    margin: 70px auto 0 auto;
     text-align: center;
     z-index: 10;
 }
